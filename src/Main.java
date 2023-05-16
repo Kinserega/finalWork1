@@ -36,7 +36,7 @@ public class Main {
     }
 
     public static float employeeWithMinSalary(Employee[] employees) {
-        float minSalary = 100_000;
+        float minSalary = employees[0].getSalary();
         for (int i = 0; i < employees.length; i++) {
             if (minSalary > employees[i].getSalary()) {
                 minSalary = employees[i].getSalary();
@@ -46,7 +46,7 @@ public class Main {
     }
 
     public static float employeeWithMaxSalary(Employee[] employees) {
-        float maxSalary = 1;
+        float maxSalary = employees[0].getSalary();
         for (int i = 0; i < employees.length; i++) {
             if (maxSalary < employees[i].getSalary()) {
                 maxSalary = employees[i].getSalary();
